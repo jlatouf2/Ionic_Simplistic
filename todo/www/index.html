@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  <link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css" rel="stylesheet">
+	<link href="http://cdn.foundation5.zurb.com/foundation.css" rel="stylesheet">
+
+  <title>CSS3_simplistic</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+  <!-- scripts -->
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="lib/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/angular-moment/angular-moment.min.js"></script>
+
+    <script src="lib/sio-client/socket.io.js"></script>
+
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+
+    <script src="lib/angular-socket-io/socket.js"></script>
+
+    <script src="js/services/SocketService.js"></script>
+    <script src="js/services/Services.js"></script>
+
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/RoomController.js"></script>
+    <script src="js/controllers/LogoutController.js"></script>
+    <script src="js/controllers/RegisterController.js"></script>
+    <script src="js/controllers/PeopleinlineController.js"></script>
+    <script src="js/controllers/StorelinesController.js"></script>
+    <script src="js/controllers/StorenamesController.js"></script>
+
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+
+
+  <body ng-app="starter">
+
+
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">CSS3<span class="logo_colour">_simplistic</span></a></h1>
+          <h2>Simple. Contemporary. Website Template.</h2>
+        </div>
+      </div>
+      <nav>
+        <ul class="sf-menu" id="nav">
+          <li class="selected"><a href="/#/login">Home</a></li>
+          <li><a href="/#/logout">Examples</a></li>
+          <li><a href="/#/peopleinline">A Page</a></li>
+          <li><a href="/#/register">Another Page</a></li>
+          <li><a href="#">Example Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down One</a></li>
+              <li><a href="#">Drop Down Two</a>
+                <ul>
+                  <li><a href="#">Sub Drop Down One</a></li>
+                  <li><a href="#">Sub Drop Down Two</a></li>
+                  <li><a href="#">Sub Drop Down Three</a></li>
+                  <li><a href="#">Sub Drop Down Four</a></li>
+                  <li><a href="#">Sub Drop Down Five</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down Three</a></li>
+              <li><a href="#">Drop Down Four</a></li>
+              <li><a href="#">Drop Down Five</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.php">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+   
+       <ion-nav-view></ion-nav-view>
+
+   <!--
+   	NOTE**************:
+   	THIS WORKS, BUT THE SITE HTML NEEDS TO BE ADJUSTED TO FIT INSIDE THE IONIC
+   	FRAMEWORK......
+   	IE. IT DOES NOT SIMPLY TRANSFER INTO IONIC THE SAME WAY THAT A REGULAR SITE
+   	TEMPLATE WOULD TRANSFOR INTO ANGULAR.JS
+   -->
+    </div>
+    <footer>
+      <p>Copyright &copy; CSS3_simplistic | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+
+  </body>
+</html>
